@@ -82,7 +82,7 @@ fun MainScreen() {
             composable(Screen.Profile.route) {
                 ProfileScreen()
             }
-            composable(Screen.Items.route) {
+            composable("items") {
                 ItemsScreen(
                     navController = navController
                 )

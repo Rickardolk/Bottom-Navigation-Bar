@@ -13,9 +13,9 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            BottomNavigationBarTheme {
+//            BottomNavigationBarTheme {
                  MainScreen()
-            }
+//            }
         }
     }
 }
@@ -29,7 +29,6 @@ sealed class Screen(
     data object Cart: Screen( "cart","Cart", R.drawable.ic_cart)
     data object History: Screen( "history","History", R.drawable.ic_history)
     data object Profile: Screen( "profile","Profile", R.drawable.ic_profile)
-    data object Items : Screen("items", "Items", android.R.drawable.ic_menu_info_details)
 }
 
 

@@ -29,7 +29,7 @@ fun HomeScreen(
         )
 
         Button(
-            onClick = { navController.navigate(Screen.Items.route) }
+            onClick = { navController.navigate("items") }
         ) {
             Text(
                 text = "Masuk ke ItemsScreen"
